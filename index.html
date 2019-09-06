@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/main.css">
+
+	<title>FrontEnd Developer - Korzan Adrian</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<a href="index.html" class="navbar__logo">WebKor</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#about">O Mnie</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#portfolio">Portfolio</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Kontakt</a>
+			</li>
+		  </ul>
+		</div>
+	</nav>	
+	<header class="container to-padding">
+		<section class="row welcome">
+			<div class="col-12">
+				<h2>Adrian Korzan <br> Frontend Developer</h2>
+				<p>Tworzenie pięknych, prostych stron internetowych to moja pasja</p>
+			</div>
+		</section>
+		<div class="row down">
+			<div class="col-12">
+				<span>O mnie<br><i class="fas fa-angle-double-down"></i></span>
+			</div>
+		</div>
+	</header>
+	<!-- ABOUT ME -->
+	<section class="about-me to-padding" id="about">
+			<div class="container">
+				<div class="col-12">
+					<h2>Cześć, jestem Adrian!</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-12 d-flex align-items-center">
+							<img src="./img/adriankorzan.jpg" alt="Mój wizerunek" class="rounded-circle mx-auto d-block">
+					</div>
+					<div class="col-md-8">
+						<p>Od wielu lat pasjonuję się tworzeniem stron internetowych. Po ukończeniu technikum informatycznego zacząłem zajmować się tym profesjonalnie. W przeciągu roku zrobiłem kilka komercyjnych projektów na Wordpress'ie po czym rozpocząłem kurs "JavaScript, FrontEnd Developer" w Akademii108 aby w dalszym ciągu rozwijać swoje umiejętności. Poznawanie nowych technologii jest moją pasją - dużą część swojego wolnego czasu przeznaczam na tutorial'e oraz blogi związane z tematyką Web Developing'u.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Umięjętności -->
+		<div class="container-fluid skills">
+				<div class="container card">
+					<h2>Umiejętności</h2>
+					<div class="row">
+						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-html5"></i><br>HTML5</div>
+						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-css3-alt"></i><br>CSS3</div>
+						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-js-square"></i><br>JavaScript</div>
+						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-sass"></i><br>SASS</div>
+						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-github"></i><br>GIT</div>
+						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-bootstrap"></i><br>BOOTSTRAP</div>
+						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-wordpress-simple"></i><br>WORDPRESS</div>
+						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-react"></i><br>REACT</div>
+					</div>
+				</div>
+		</div>
+		<!-- /Umięjętności -->
+		<!-- /ABOUT ME -->
+	<!-- SERVICES -->
+	<section class="services">
+		<div class="container">
+			<h2>Portfolio</h2>
+			<p>Oto kilka ostatnio wykonanych komercyjnych projektów</p>
+		</div>
+		<div class="portfolio">
+			<div class="website">
+				<a data-toggle="collapse" href="#collapseSyriusz" role="button" aria-expanded="false" aria-controls="collapseSyriusz">
+				<img src="./img/syriusz.jpg" alt="">
+					<span>Syriusz</span>
+				</a>
+			</div>
+			<div class="website">
+				<a data-toggle="collapse" href="#collapseTuliroza" role="button" aria-expanded="false" aria-controls="collapseTuliroza">
+					<img src="./img/tuliroza.jpg" alt="">
+					<span>Tuliróża</span>
+				</a>
+			</div>
+			<div class="website">
+				<a data-toggle="collapse" href="#collapseMojra" role="button" aria-expanded="false" aria-controls="collapseMojra">
+					<img src="./img/mojra.jpg" alt="">
+					<span>Mojra</span>
+				</a>
+			</div>
+		</div>
+		<div class="collapse" id="collapseSyriusz">
+			<div class="card card-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+			</div>
+		</div>
+		<div class="collapse" id="collapseTuliroza">
+			<div class="card card-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+			</div>
+		</div>
+		<div class="collapse" id="collapseMojra">
+			<div class="card card-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+			</div>
+		</div>
+	</section>
+	<!-- <hr> -->
+	<section class="contact" id="contact">
+		<h2>Kontakt</h2>
+		<form>
+			<input placeholder="Imię/Nazwa" type="text"  value="" required>
+			<input placeholder="Adres email" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+			<span class="validation-text">Nieprawidłowy adres email.</span>
+			<div class="flex">
+				<textarea placeholder="Wiadomość" rows="1" required></textarea>
+			</div>
+			<button>Wyślij</button>
+		</form>
+	</section>
+	<!-- CV -->
+	<section class="cv">
+		<div class="container">
+			<div><h2>Pobierz moje CV</h2></div>
+			<div><i class="fas fa-file-pdf"></i></div>
+		</div>
+	</section>
+	<!-- /CV -->
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div>
+				<h2>Znajdź mnie</h2>
+			</div>
+			<div class="circle">
+					<a href="https://www.linkedin.com/in/adrian-korzan-frontend-developer/"><i class="fab fa-linkedin"></i></a>
+			</div>
+			<div class="circle">
+					<a href="https://github.com/korzanicho"><i class="fab fa-github"></i></a>
+			</div>
+		</div>
+	</footer>
+	<!-- /Footer -->
+	
+	<!-- <script src="./js/framekor.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8cc4d693d1.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.about-me{
+	position: relative;
+	min-height: 99vh;
+	margin-top: 0;
+	background-color: $color-primary;
+	color: white;
+	padding-bottom: 3.5rem;
+	
+	p{
+		line-height: 2rem;
+		text-align: center;
+		font-size: 1.5rem;
+		padding: 2rem;
+	}
+}

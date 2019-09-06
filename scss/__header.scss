@@ -1,0 +1,60 @@
+.navbar{
+	background-color: $color-white;
+	&__logo{
+		font-family: 'Knewave', cursive;
+		font-size: 2rem;
+		color: $color-primary;
+		&:hover, &:focus{
+			text-decoration: none;
+		}
+	}
+	text-transform: uppercase;
+}
+
+.navbar-nav .nav-link{
+	color: $color-primary;
+}
+.navbar li a:hover{
+	border: 1px solid $color-primary;
+	border-radius: 290486px;
+}
+.navbar li:active{
+	background-color: $color-primary;
+	border-radius: 290486px;
+	a{color: $color-white !important;}
+	transition: all .3s;
+}
+header{
+	min-height: 99vh;
+	// position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	// flex-direction: column;
+	margin-bottom: 0;
+}
+
+.welcome{
+	h2{
+		color: $color-black;
+		font-weight: 700;
+		font-size: 3rem;
+	}
+	p{
+		margin-top: 2%;
+		text-align: center;
+		width: 100%;
+		font-size: 1.4rem;
+	}
+}
+
+.down{
+	align-self: flex-end;
+	// position: absolute;
+	text-align: center;
+	// bottom: 0;
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+}

@@ -11,6 +11,9 @@
 	text-transform: uppercase;
 }
 
+.navbar-nav .nav-item{
+	text-align: center;
+}
 .navbar-nav .nav-link{
 	color: $color-primary;
 }
@@ -21,7 +24,7 @@
 .navbar li:active{
 	background-color: $color-primary;
 	border-radius: 290486px;
-	a{color: $color-white !important;}
+	a{color: $color-white;}
 	transition: all .3s;
 }
 header{
@@ -49,9 +52,7 @@ header{
 
 .down{
 	align-self: flex-end;
-	// position: absolute;
 	text-align: center;
-	// bottom: 0;
 	width: 100%;
 	text-transform: uppercase;
 	font-weight: 700;

@@ -1,3 +1,14 @@
+:root{
+font-size: 14px;
+}
+
+@media only screen and (min-width: 768px){
+	:root{
+		font-size: 18px;
+	}
+}
+
+
 body{
 	// background-image: url("../img/stitched_wool.png");
 	overflow-x: hidden;

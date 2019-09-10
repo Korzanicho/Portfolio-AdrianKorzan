@@ -1,20 +1,17 @@
 .skills{
 	position: relative;
-	// height: 300px;
 	display: flex;
 	justify-content: center;
 
 	.container{
 		margin-top: -6.5rem;
 		background-color: $color-white;
-		// position: absolute;
 		bottom: 10%;
 		padding: 40px;
 
 	}
 	.card{
 		box-shadow: 0 1px 6px gray;
-		// margin-top: 300px;
 		text-align: center;
 		color: $color-primary;
 		h2{

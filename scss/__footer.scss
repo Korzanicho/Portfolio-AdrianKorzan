@@ -53,5 +53,5 @@ footer{
 			}
 		}
 	}
-	background-color: $color-primary;
+	background-image: linear-gradient($color-primary, darken($color-primary,10));
 }

@@ -1,6 +1,10 @@
 :root{
 	font-size: 14px;
 	scroll-behavior: smooth;
+	:any-link{
+		text-decoration: none;
+		color: $color-primary;
+	}
 }
 
 @media only screen and (min-width: 768px){

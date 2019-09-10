@@ -5,9 +5,9 @@
 		font-family: 'Knewave', cursive;
 		font-size: 2rem;
 		color: $color-primary;
-		&:hover, &:focus{
-			// text-decoration: none;
-		}
+		// background: -webkit-linear-gradient($color-primary, lighten($color-primary, 30));
+		// -webkit-background-clip: text;
+		// -webkit-text-fill-color: transparent;
 		&:any-link{
 			color: $color-primary;
 			text-decoration: none;

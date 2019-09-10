@@ -9,7 +9,6 @@
 	}
 }
 
-
 body{
 	// background-image: url("../img/stitched_wool.png");
 	overflow-x: hidden;
@@ -26,4 +25,8 @@ section{
 		font-size: 1.8rem;
 		width: 100%;
 	}
+}
+
+.shadow{
+	box-shadow: 1px 0 10px gray;
 }

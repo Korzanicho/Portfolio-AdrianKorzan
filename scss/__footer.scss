@@ -8,6 +8,7 @@ footer{
 			text-transform: uppercase;
 			font-weight: 700;
 			color: white;
+			flex-basis: 4;
 		}
 		.circle{
 			margin-left: 20px;
@@ -16,6 +17,7 @@ footer{
 			background-color: $color-white;
 			border-radius: 50%;
 			text-align: center;
+			transition: all .5s;
 
 			i{
 				display:inline-block;
@@ -29,9 +31,25 @@ footer{
 			}
 			.fa-linkedin{
 				color: #0e76a8;
+				transition: all .5s;
 			}
 			.fa-github{
 				color: black;
+				transition: all .5s;
+			}
+		}
+		.circle:nth-child(2):hover{
+			background-color: #0e76a8;
+			border: 1px solid $color-white;
+			.fa-linkedin{
+				color: $color-white;
+			}
+		}
+		.circle:nth-child(3):hover{
+			background-color: black;
+			border: 1px solid $color-white;
+			.fa-github{
+				color: $color-white;
 			}
 		}
 	}

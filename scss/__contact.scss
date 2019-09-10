@@ -5,8 +5,8 @@ $width: auto;
 $cubic: cubic-bezier(.64,.09,.08,1);
 
 .contact{
-	// padding: 10px 0px;
-	// padding-bottom: 2.5rem;
+	// padding-bottom: 40px;
+	padding-bottom: 2.5rem;
 	background-color: $color-primary;
 	position: relative;
 	z-index: 10;
@@ -25,7 +25,7 @@ $cubic: cubic-bezier(.64,.09,.08,1);
 	form {
 		font-family: 'roboto', sans-serif;
 		width: 90%;
-		margin: 20px auto 40px;
+		margin: 20px auto 0px;
 		box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
 		padding: 0 0 40px;
 		border-radius: 3px;
@@ -158,12 +158,13 @@ $cubic: cubic-bezier(.64,.09,.08,1);
 	margin-bottom: 0;
 }
 
-@media only screen and (min-width: 500px){
+@media (min-width: 500px){
 	$width: 400px;
 	
+	.contact{
 		form {
 			width: $width + 60px;
-			margin: 40px auto 40px;
+			margin: 40px auto 0px;
 
 		  input,
 		  textarea {
@@ -250,4 +251,5 @@ $cubic: cubic-bezier(.64,.09,.08,1);
 			}
 		  }
 	}	
+	}
 }

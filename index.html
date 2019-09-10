@@ -20,7 +20,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 		  <ul class="navbar-nav ml-auto">
-			<li class="nav-item active">
+			<li class="nav-item">
 			  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
@@ -35,16 +35,18 @@
 		  </ul>
 		</div>
 	</nav>	
-	<header class="container to-padding">
+	<header class="container to-padding" id="home">
 		<section class="row welcome">
 			<div class="col-12 my-auto">
 				<h2>Adrian Korzan <br> Frontend Developer</h2>
 				<p>Tworzenie pięknych, prostych stron internetowych to moja pasja</p>
 			</div>
 		</section>
-		<div class="row down">
+		<div class="animated infinite pulse row down">
 			<div class="col-12">
-				<span>O mnie<br><i class="fas fa-angle-double-down"></i></span>
+				<a href="#about">
+					<span>O mnie<br><i class="fas fa-angle-double-down"></i></span>
+				</a>
 			</div>
 		</div>
 	</header>
@@ -83,7 +85,7 @@
 		<!-- /Umięjętności -->
 		<!-- /ABOUT ME -->
 	<!-- SERVICES -->
-	<section class="services">
+	<section class="services to-padding" id="portfolio">
 		<div class="container">
 			<h2>Portfolio</h2>
 			<p>Oto kilka ostatnio wykonanych komercyjnych projektów</p>
@@ -126,31 +128,23 @@
 	</section>
 	<!-- <hr> -->
 	<!-- Contact -->
-	<section class="contact" id="contact">
+	<section class="contact to-padding" id="contact">
 		<h2>Kontakt</h2>
-		<form>
+		<form action="https://formspree.io/email@domain.tld" method="POST">
 			<div class="flex">
-				<input placeholder="Imię/Nazwa" type="text"  value="" required>
+				<input placeholder="Imię/Nazwa" type="text"  value="" required name="Name">
 			</div>
 			<div class="flex">
-				<input placeholder="Adres email" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+				<input placeholder="Adres email" type="email" onblur="this.setAttribute('value', this.value);" value="" required name="Email">
 				<span class="validation-text">Nieprawidłowy adres email.</span>
 			</div>
 			<div class="flex">
-				<textarea placeholder="Wiadomość" rows="1" required></textarea>
+				<textarea placeholder="Wiadomość" rows="1" required name="Message"></textarea>
 			</div>
 			<button>Wyślij</button>
 		</form>
 	</section>
 	<!-- /Contact -->
-	<!-- CV -->
-	<section class="cv">
-		<div class="container">
-			<div><h2>Pobierz moje CV</h2></div>
-			<div><i class="fas fa-file-pdf"></i></div>
-		</div>
-	</section>
-	<!-- /CV -->
 	<!-- Footer -->
 	<footer>
 		<div class="container">
@@ -158,10 +152,10 @@
 				<h2>Znajdź mnie</h2>
 			</div>
 			<div class="circle">
-					<a href="https://www.linkedin.com/in/adrian-korzan-frontend-developer/"><i class="fab fa-linkedin"></i></a>
+					<a href="https://www.linkedin.com/in/adrian-korzan-frontend-developer/" target="_blank"><i class="fab fa-linkedin"></i></a>
 			</div>
 			<div class="circle">
-					<a href="https://github.com/korzanicho"><i class="fab fa-github"></i></a>
+					<a href="https://github.com/korzanicho" target="_blank"><i class="fab fa-github"></i></a>
 			</div>
 		</div>
 	</footer>

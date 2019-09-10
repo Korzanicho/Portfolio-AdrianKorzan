@@ -18,13 +18,15 @@
 }
 
 .website{
+	box-sizing: border-box;
 	position: relative;
 	margin: 10px;
 	object-fit: none;
-	border-radius: 23px;
+	border-radius: 5px;
+	// border: 1px solid $color-primary;
 	transition: all .3s;
 	&:hover{
-		box-shadow: 0 0 6px $color-primary;
+		box-shadow: 0 0 20px grey;
 		transform: scale(1.05);
 	}
 	&:active{
@@ -34,7 +36,7 @@
 	img{
 		// margin: 1%;
 		height: 100%;
-		border-radius: 23px;
+		border-radius: 5px;
 		filter: brightness(75%);
 	}
 	span{

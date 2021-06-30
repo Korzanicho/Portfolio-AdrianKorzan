@@ -1,172 +1,217 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="./css/main.css">
-	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/font-awesome-all.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
-	<meta property="og:image" content="https://korzanicho.github.io/Portfolio-AdrianKorzan/img/adriankorzan_min.jpg">
+  <meta property="og:image" content="https://korzanicho.github.io/Portfolio-AdrianKorzan/img/adriankorzan_min.jpg">
 
-	<title>FrontEnd Developer - Korzan Adrian</title>
+  <title>FrontEnd Developer - Korzan Adrian</title>
 </head>
+
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-		<a href="index.html" class="navbar__logo">AK</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-		  <ul class="navbar-nav ml-auto">
-			<li class="nav-item">
-			  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#about">O Mnie</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#portfolio">Portfolio</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#contact">Kontakt</a>
-			</li>
-		  </ul>
-		</div>
-	</nav>	
-	<header class="container to-padding" id="home">
-		<section class="row welcome">
-			<div class="col-12 my-auto">
-				<h2>Adrian Korzan <br> Frontend Developer</h2>
-				<p>Tworzenie pięknych, prostych stron internetowych to moja pasja</p>
-			</div>
-		</section>
-		<div class="row down animated infinite pulse">
-			<div class="col-12">
-				<a href="#about">
-					<span>O mnie<br><i class="fas fa-angle-double-down"></i></span>
-				</a>
-			</div>
-		</div>
-	</header>
-	<!-- ABOUT ME -->
-	<section class="about-me to-padding animated" id="about">
-			<div class="container">
-				<div class="col-12 animated" id="myself-desc">
-					<h2>Cześć, jestem Adrian!</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-12 d-flex align-items-center">
-							<img src="./img/adriankorzan_min.jpg" alt="Mój wizerunek" class="mx-auto d-block">
-					</div>
-					<div class="col-md-8">
-						<p>Od wielu lat pasjonuję się tworzeniem stron internetowych. Po ukończeniu technikum informatycznego zacząłem zajmować się tym profesjonalnie. W przeciągu roku zrobiłem kilka komercyjnych projektów na Wordpress'ie po czym rozpocząłem kurs "JavaScript, FrontEnd Developer" w Akademii108 aby w dalszym ciągu rozwijać swoje umiejętności. Poznawanie nowych technologii jest moją pasją - dużą część swojego wolnego czasu przeznaczam na tutorial'e oraz blogi związane z tematyką Web Developing'u.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Umięjętności -->
-		<div class="container-fluid skills animated" id="skills">
-				<div class="container card">
-					<h2>Umiejętności</h2>
-					<div class="row">
-						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-html5"></i><br>HTML5</div>
-						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-css3-alt"></i><br>CSS3</div>
-						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-js-square"></i><br>JavaScript</div>
-						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-sass"></i><br>SASS</div>
-						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-github"></i><br>GIT</div>
-						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-bootstrap"></i><br>BOOTSTRAP</div>
-						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-wordpress-simple"></i><br>WORDPRESS</div>
-						<div class="col-6 col-sm-4 col-md-3"><i class="fab fa-react"></i><br>REACT</div>
-					</div>
-				</div>
-		</div>
-		<!-- /Umięjętności -->
-		<!-- /ABOUT ME -->
-	<!-- SERVICES -->
-	<section class="services to-padding" id="portfolio">
-		<div class="container">
-			<h2>Portfolio</h2>
-			<p>Oto kilka ostatnio wykonanych komercyjnych projektów</p>
-		</div>
-		<div class="portfolio">
-			<div class="website">
-				<a data-toggle="collapse" href="#collapseSyriusz" role="button" aria-expanded="false" aria-controls="collapseSyriusz">
-				<img src="./img/syriusz.jpg" alt="">
-					<span>Syriusz</span>
-				</a>
-			</div>
-			<div class="website">
-				<a data-toggle="collapse" href="#collapseTuliroza" role="button" aria-expanded="false" aria-controls="collapseTuliroza">
-					<img src="./img/tuliroza.jpg" alt="">
-					<span>Tuliróża</span>
-				</a>
-			</div>
-			<div class="website">
-				<a data-toggle="collapse" href="#collapseMojra" role="button" aria-expanded="false" aria-controls="collapseMojra">
-					<img src="./img/mojra.jpg" alt="">
-					<span>Mojra</span>
-				</a>
-			</div>
-		</div>
-		<div class="collapse" id="collapseSyriusz">
-			<div class="card card-body">
-					Początkowo strona została przeze mnie zaprojektowana oraz zakodowana bez systemu zarządzania treścią. Później przeniosłem ją na Wordpress'a. <a href="http://www.syriusz-serwis.pl" target="_blank">Odwiedź stronę</a>
-			</div>
-		</div>
-		<div class="collapse" id="collapseTuliroza">
-			<div class="card card-body">
-					Połączenie płatności "Przelewy24" ze sklepem internetowym (bez CMS) kwiaciarni. Zaprojektowanie bazdy danych z produktami. Dla praktyki zrobiłem identyczną stronę na wordpressie. <a href="http://tuliroza.pl" target="_blank">Odwiedź stronę</a>
-			</div>
-		</div>
-		<div class="collapse" id="collapseMojra">
-			<div class="card card-body">
-				Stworzenie strony internetowej dla "szkoły programowania dla najmłodszych". Strona została wykonana na Wordpressie. Stworzony został motyw potomny. Jego edycję ułatwiały mi: preprocesor CSS Less oraz Gulp. <a href="http://www.mojra.com.pl" target="_blank">Odwiedź stronę</a>
-			</div>
-		</div>
-	</section>
-	<!-- Contact -->
-	<section class="contact to-padding" id="contact">
-		<h2>Kontakt</h2>
-		<form action="https://formspree.io/adrian.korzan@gmail.com" method="POST">
-			<div class="flex">
-				<input placeholder="Imię/Nazwa" type="text"  value="" required name="Name">
-			</div>
-			<div class="flex">
-				<input placeholder="Adres email" type="email" onblur="this.setAttribute('value', this.value);" value="" required name="Email">
-				<span class="validation-text">Nieprawidłowy adres email.</span>
-			</div>
-			<div class="flex">
-				<textarea placeholder="Wiadomość" rows="1" required name="Message"></textarea>
-			</div>
-			<button>Wyślij</button>
-		</form>
-	</section>
-	<!-- /Contact -->
-	<!-- Footer -->
-	<footer>
-		<div class="container">
-			<div>
-				<h2 class="animated infinite pulse">Znajdź mnie</h2>
-			</div>
-			<div class="circle">
-					<a href="https://www.linkedin.com/in/adrian-korzan-frontend-developer/" target="_blank"><i class="fab fa-linkedin"></i></a>
-			</div>
-			<div class="circle">
-					<a href="https://github.com/korzanicho" target="_blank"><i class="fab fa-github"></i></a>
-			</div>
-		</div>
-	</footer>
-	<!-- /Footer -->
-	
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="./js/bootstrap.bundle.min.js"></script> 
-	<script src="https://kit.fontawesome.com/8cc4d693d1.js"></script>
-	<script src="./js/main-min.js"></script>
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <div class="navbar__logo">
+        <a href="index.html">AK</a>
+      </div>
+      <button class="navbar__toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar__menu">
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">O Mnie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="header" id="home">
+    <section class="header__title">
+      <h2>Adrian Korzan <br> Frontend Developer</h2>
+      <p>Tworzenie pięknych, prostych stron internetowych to moja pasja</p>
+      <div class="header__down">
+        <a href="#about" class="bounce">
+          <span>O mnie<br><i class="fas fa-angle-double-down"></i></span>
+        </a>
+      </div>
+    </section>
+  </header>
+  <section class="about-me to-padding animated" id="about">
+    <div class="container">
+      <div class="about-me__header animated" id="myself-desc">
+        <h2>Cześć, jestem Adrian!</h2>
+      </div>
+      <div class="row">
+        <div class="about-me__left">
+          <img src="./img/ja-wyciety.png" alt="Mój wizerunek" class="mx-auto d-block">
+        </div>
+        <div class="about-me__right">
+          <p>Od kiedy pamiętam interesuję się tworzeniem stron i aplikacji internetowych. Z tego powodu zdecydowałem się pójść do technikum informatycznego gdzie poszerzałem wiedzę informatyczną w szerokim tego słowa znaczeniu (budowa oraz naprawa komputerów stacjonarnych i laptopów, znajomość systemów operacyjnych Windows, Windows Server, Linux, Relacyjne Bazy danych, programowanie w php, js, C++).
+            Po ukończeniu szkoły średniej zacząłem pogłębiać swoją wiedzę w zakresie Web Developing'u kursami, zagłębiając się w dokumentacje oraz własnymi projektami. W przeciągu roku od skończenia technikum wykonałem kilka komercyjnych projektów na Wordpress'ie po czym rozpocząłem kurs "JavaScript, FrontEnd Developer" w Akademii108 aby w dalszym ciągu rozwijać swoje umiejętności. Poznawanie nowych technologii jest moją pasją - dużą część swojego wolnego czasu przeznaczam na tutoriale oraz blogi o tematyce Web Developing'u. Po ukończeniu bootcamp'u rozpocząłem pracę jako WebDeveloper oraz studia na kierunku informatyki o profilu "aplikacje webowe i mobilne".</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills animated" id="skills">
+    <div class="container skills__card shadow">
+      <h2 class="skills__title">Umiejętności</h2>
+      <div class="row">
+        <div class="skills__skill"><i class="fab fa-html5" style="color: #F06427;"></i><br>HTML5</div>
+        <div class="skills__skill"><i class="fab fa-css3-alt" style="color: #239FDF;"></i><br>CSS3</div>
+        <div class="skills__skill"><i class="fab fa-js-square" style="color: #F5DD1B;"></i><br>JavaScript</div>
+        <div class="skills__skill"><i class="fab fa-sass" style="color: #CA6496;"></i><br>SASS</div>
+        <div class="skills__skill"><i class="fab fa-git-alt" style="color: #F36422;"></i><br>GIT</div>
+        <div class="skills__skill"><i class="fab fa-github" style="color: #000000;"></i><br>GITHUB</div>
+        <div class="skills__skill"><i class="fab fa-bootstrap" style="color: #5E3E89;"></i><br>BOOTSTRAP</div>
+        <div class="skills__skill"><i class="fab fa-wordpress-simple" style="color: #007199;"></i><br>WORDPRESS</div>
+        <div class="skills__skill"><i class="fab fa-vuejs" style="color: #68B080;"></i><br>VUE</div>
+        <div class="skills__skill"><i class="fab fa-php" style="color: #757AB2;"></i><br>PHP</div>
+      </div>
+    </div>
+  </section>
+  <section class="services to-padding" id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p>Oto kilka ostatnio wykonanych komercyjnych projektów</p>
+    </div>
+    <div class="portfolio">
+      <article class="website" data-collapse="collapseSyriusz">
+        <img src="./img/syriusz.jpg" alt="">
+        <span>Syriusz</span>
+      </article>
+      <article class="website" data-collapse="collapseTuliroza">
+        <img src="./img/tuliroza.jpg" alt="">
+        <span>Tuliróża</span>
+      </article>
+      <article class="website" data-collapse="collapseMojra">
+        <img src="./img/mojra.jpg" alt="">
+        <span>Mojra</span>
+      </article>
+    </div>
+    <article class="collapse" id="collapseSyriusz">
+      <span class="collapse__close">x</span>
+      <div class="card">
+        <h2 class="card__header">Syriusz</h2>
+        <img src="./img/syriusz-full.PNG" alt="Widok strony syriusz" class="card__image">
+        <div class="card__body">
+          <h3 class="card__title">
+            Opis:
+          </h3>
+          Początkowo strona została przeze mnie zaprojektowana oraz zakodowana bez systemu zarządzania treścią.
+          Później przeniosłem ją na Wordpress'a. <a href="http://www.syriusz-serwis.pl" target="_blank">Odwiedź
+          stronę</a>
+          <h3 class="card__title">
+            Technologie:
+          </h3>
+          <ul>
+            <li>Sass</li>
+            <li>PHP</li>
+            <li>Wordpress</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article class="collapse" id="collapseTuliroza">
+      <span class="collapse__close">x</span>
+      <div class="card card-body">
+        <h2 class="card__header">Tuliróża</h2>
+        <img src="./img/tuliroza.jpg" alt="Widok strony tuliróża" class="card__image">
+        <h3 class="card__title">
+          Opis:
+        </h3>
+        Uwaga: klient porzucił stronę, nie przedłużył SSL<br>
+        Połączenie płatności "Przelewy24" ze sklepem internetowym (bez CMS) kwiaciarni. Zaprojektowanie bazdy danych
+        z produktami. Dla praktyki zrobiłem identyczną stronę na wordpressie. <a href="http://tuliroza.pl"
+          target="_blank">Odwiedź stronę</a>
+      </div>
+      <h3 class="card__title">
+        Technologie:
+      </h3>
+      <ul>
+        <li>PHP</li>
+      </ul>
+    </article>
+    <article class="collapse" id="collapseMojra">
+      <span class="collapse__close">x</span>
+      <div class="card card-body">
+        <h2 class="card__header">Mojra</h2>
+        <img src="./img/mojra.jpg" alt="Widok strony mojra" class="card__image">
+        <h3 class="card__title">
+          Opis:
+        </h3>
+        Stworzenie strony internetowej dla "szkoły programowania dla najmłodszych". Strona została wykonana na
+        Wordpressie. Stworzony został motyw potomny. Jego edycję ułatwiały mi: preprocesor CSS Less oraz Gulp. <a
+          href="http://www.mojra.com.pl" target="_blank">Odwiedź stronę</a>
+        <h3 class="card__title">
+          Technologie:
+        </h3>
+        <ul>
+          <li>PHP</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+  <!-- Contact -->
+  <section class="contact to-padding" id="contact">
+    <h2>Kontakt</h2>
+    <form action="https://formspree.io/adrian.korzan@gmail.com" method="POST">
+      <div class="flex">
+        <input placeholder="Imię/Nazwa" type="text" value="" required name="Name">
+      </div>
+      <div class="flex">
+        <input placeholder="Adres email" type="email" onblur="this.setAttribute('value', this.value);" value="" required
+          name="Email">
+        <span class="validation-text">Nieprawidłowy adres email.</span>
+      </div>
+      <div class="flex">
+        <textarea placeholder="Wiadomość" rows="1" required name="Message"></textarea>
+      </div>
+      <button>Wyślij</button>
+    </form>
+  </section>
+  <!-- /Contact -->
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div>
+        <h2 class="animated infinite pulse">Znajdź mnie</h2>
+      </div>
+      <div class="circle">
+        <a href="https://www.linkedin.com/in/adrian-korzan-frontend-developer/" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="circle">
+        <a href="https://github.com/korzanicho" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
+
+  <script src="https://kit.fontawesome.com/8cc4d693d1.js"></script>
+  <script src="./index.js"></script>
 </body>
+
 </html>

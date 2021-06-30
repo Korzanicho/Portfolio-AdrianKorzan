@@ -1,29 +1,41 @@
-.skills{
-	position: relative;
+.skills {
 	display: flex;
+	position: relative;
 	justify-content: center;
-
-	.container{
-		margin-top: -6.5rem;
-		background-color: $color-white;
-		bottom: 10%;
+	
+	
+	.container {
 		padding: 40px;
-
+		border-radius: 10px;
+		margin: -6.5rem 10px 0 10px;
+		background-color: $color-white;
 	}
-	.card{
-		box-shadow: 0 1px 6px gray;
+
+	.row {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__card {
 		text-align: center;
 		color: $color-primary;
-		h2{
-			text-transform: uppercase;
-			padding: 10px;
-			font-weight: 700;
-			color: $color-black;
-		}
-		i{
+
+		i {
 			font-size: 2.5rem;
 			color: $color-primary;
 			padding: 20px;
 		}
+	}
+
+	&__title {
+		margin: 0;
+		padding: 0;
+		font-weight: 700;
+		color: $color-black;
+		text-transform: uppercase;
+	}
+
+	&__skill {
+		flex-basis: 25%;
 	}
 }

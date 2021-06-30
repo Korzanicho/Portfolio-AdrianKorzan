@@ -3,23 +3,13 @@ $invalid: #E91E63;
 $width: auto;
 $cubic: cubic-bezier(.64,.09,.08,1);
 
-.contact{
-	padding-bottom: 2.5rem;
-	background-color: $color-primary;
+.contact {
 	position: relative;
-	z-index: 10;
+	padding-bottom: 2.5rem;
+	background-color: $color-white;
+	border-left: 5px solid $color-primary;
+	border-right: 5px solid $color-primary;
 
-	&:after{
-		content: '';
-		background-color: $color-white;
-		display: block;
-		position: absolute;
-		top: 0px;
-		left: 1%;
-		right: 1%;
-		bottom: 0px;
-		z-index: -1;
-	}
 	form {
 		font-family: 'roboto', sans-serif;
 		width: 90%;

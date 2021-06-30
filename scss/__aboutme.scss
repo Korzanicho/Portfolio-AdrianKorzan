@@ -1,23 +1,57 @@
-section.about-me{
+.about-me {
 	position: relative;
-	min-height: 99vh;
 	margin-top: 0;
-	background-image: linear-gradient($color-primary, lighten($color-primary,10));
+	background-image: linear-gradient($color-primary, lighten($color-primary, 30));
+	background-image: url("../img/clouds.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: left;
 	color: white;
-	padding-bottom: 6.5rem;
+	padding-bottom: 150px;
+
+	&__header h2 {
+		margin: 0;
+		padding: 0 0 45px 0;
+	}
+
+	&__left {
+		flex-basis: 30%;
+	}
+
+	&__right {
+		flex-basis: 70%;
+		position: relative;
+	}
 	
-	p{
+	p {
+		border-radius: 10px;
 		line-height: 2rem;
 		text-align: center;
 		font-size: 1.5rem;
-		padding: 2rem;
+		padding: 15px;
+		margin-top: 0;
+		// background-image: linear-gradient(rgba(20, 39, 67, 0.5), lighten(rgba(20, 39, 67, 0.5), 30));
+		background-color: $color-white;
+		color: #293347;
+		font-weight: 600;
 	}
 
-	img{
-		max-width: 100%;
+	img {
+		top: 80px;
 		height: auto;
+		width: 234px;
+		max-width: 100%;
+		position: sticky;
 		border-radius: 50%;
+		margin-bottom: 20px;
 		border: 1px solid $color-white;
 		box-shadow: 0 0 10px $color-white;
+	}
+	
+	@media only screen and (max-width: 768px){
+		.row {
+			align-items: center;
+			flex-direction: column;
+		}
 	}
 }

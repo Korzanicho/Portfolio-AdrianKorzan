@@ -1,72 +1,136 @@
-.navbar{
-	transition: box-shadow .5s;
+.navbar {
 	background-color: $color-white;
-	&__logo{
-		font-family: 'Knewave', cursive;
+	position: fixed;
+	top: 0;
+	transition: box-shadow .5s;
+	width: 100%;
+	z-index: 3;
+
+	&__inner {
+		width: 100%;
+		display: flex;
+		margin: 0 auto;
+		max-width: 1048px;
+	}
+
+	&__toggler {
+		display: none;
+	}
+
+	&__menu {
+		flex-basis: 80%;
+
+		ul {
+			display: flex;
+			list-style-type: none;
+			justify-content: space-around;
+		}
+	}
+
+	&__logo {
 		font-size: 2rem;
+		flex-basis: 20%;
+		font-family: 'Knewave', cursive;
 		color: $color-primary;
-		&:any-link{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&:any-link {
 			color: $color-primary;
 			text-decoration: none;
 		}
 	}
+
 	text-transform: uppercase;
 }
 
-.navbar-nav .nav-item{
+.navbar-nav .nav-item {
 	text-align: center;
 }
-.navbar-nav .nav-link{
+
+.navbar-nav .nav-link {
 	color: $color-primary;
 }
-.navbar li a:hover{
+
+.navbar li a:hover {
 	border: 1px solid $color-primary;
 	border-radius: 290486px;
 }
-.navbar li:active{
+
+.navbar li:active {
 	background-color: $color-primary;
 	border-radius: 290486px;
-	a{color: $color-white;}
+
+	a {
+		color: $color-white;
+	}
+
 	transition: all .3s;
 }
-header{
-	min-height: 94vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	margin-bottom: 0;
-}
 
-.welcome{
-	h2{
-		color: $color-black;
-		font-weight: 700;
-		font-size: 3rem;
+.header {
+	background-image: url('../img/repeated-square.png');
+	padding: 100px 10px;
+	position: relative;
+	min-height: 75vh;
+	display: flex;
+	align-items: center;
+
+	&__title {
+		display: flex;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		align-items: center;
+		max-width: 1048px;
+		justify-content: center;
+
+		h2 {
+			color: $color-black;
+			font-weight: 700;
+			font-size: 3rem;
+			padding: 0;
+			margin: 0;
+		}
+
+		p {
+			margin-top: 2%;
+			text-align: center;
+			width: 100%;
+			font-size: 1.4rem;
+		}
 	}
-	p{
-		margin-top: 2%;
+
+	&__down {
+		align-self: flex-end;
 		text-align: center;
 		width: 100%;
-		font-size: 1.4rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		position: absolute;
+		bottom: 10px;
+
+		.bounce {
+			display: block;
+			animation-name: bounce;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+
+		a:any-link {
+			color: black;
+			text-decoration: none;
+		}
 	}
 }
 
-.down{
-	align-self: flex-end;
-	text-align: center;
-	width: 100%;
-	text-transform: uppercase;
-	font-weight: 700;
-	a:any-link{
-		color: black;
-		text-decoration: none;
+@keyframes bounce {
+	from {
+		transform: scale(0.8);
 	}
-}
 
-
-@media only screen and (min-width: 768px){
-	header{
-		min-height: 99vh;
+	to {
+		transform: scale(1);
 	}
 }

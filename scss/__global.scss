@@ -7,6 +7,10 @@
 	}
 }
 
+* {
+	box-sizing: border-box;
+}
+
 @media only screen and (min-width: 768px){
 	:root{
 		font-size: 18px;
@@ -14,6 +18,7 @@
 }
 
 body{
+	margin: 0;
 	overflow-x: hidden;
 	font-family: 'Source Sans Pro', sans-serif;
 }
@@ -28,6 +33,15 @@ section{
 		font-size: 1.8rem;
 		width: 100%;
 	}
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1048px;
+}
+
+.row {
+	display: flex;
 }
 
 .shadow{

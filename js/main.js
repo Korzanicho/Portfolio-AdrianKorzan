@@ -1,38 +1,27 @@
 "use strict";
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ADD SHADOW TO NAV !!!!!!!!!!!!!!!!!!!!!!!
-const shadowToNav = () =>{
-	let nav = document.querySelector("nav");
 
-	// Setup isScrolling variable
+const addShadowToNav = () => {
+	const nav = document.querySelector("nav");
 	let isScrolling;
 
-// Listen for scroll events
-	window.addEventListener('scroll', function ( event ) {
+	window.addEventListener('scroll', function (event) {
 		nav.classList.add("shadow");
-
-
-		// Clear our timeout throughout the scroll
-		window.clearTimeout( isScrolling );
-
-		// Set a timeout to run after scrolling ends
-		isScrolling = setTimeout(function() {
-
+		window.clearTimeout(isScrolling);
+		isScrolling = setTimeout(function () {
 			nav.classList.remove("shadow");
-
-	}, 1000);
-
-}, false);
+		}, 1000);
+	}, false);
 }
-shadowToNav();
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! END SHADOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+addShadowToNav();
 
 // Padding to section (height of nav)
-let paddingNav = () =>{
+let paddingNav = () => {
 	let nav = document.querySelector("nav");
 	let navHeight = nav.offsetHeight;
 
 	let toPaddingSections = document.querySelectorAll(".to-padding");
-	for(let toPaddingSection of toPaddingSections){
+	for (let toPaddingSection of toPaddingSections) {
 		toPaddingSection.style.cssText = `padding-top: ${navHeight}px`;
 	}
 }
@@ -40,16 +29,16 @@ window.onresize = paddingNav();
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!END PADDING TO SECTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ACTIVE CLASS TO NAV!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-const activeCllasToNav = () =>{
+const activeClassToNav = () => {
 	let sectionHome = document.getElementById('home');
 	let navHome = document.querySelector("a.nav-link[href='#home']");
-	
+
 	let sectionAbout = document.getElementById('about');
 	let navAbout = document.querySelector("a.nav-link[href='#about']");
-	
+
 	let sectionPortfolio = document.getElementById('portfolio');
 	let navPortfolio = document.querySelector("a.nav-link[href='#portfolio']");
-	
+
 	let sectionContact = document.getElementById('contact');
 	let navContact = document.querySelector("a.nav-link[href='#contact']");
 	
@@ -97,7 +86,7 @@ const activeCllasToNav = () =>{
 	  }
 	}
 }
-activeCllasToNav();
+activeClassToNav();
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! END ACTIVE CLASS TO NAV !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -123,14 +112,14 @@ function inView(element) {
   return false;
 }
 
-function animate() {
-  if (inView(myselfDesc)) {
-      myselfDesc.classList.add('bounce');
-  }
-  if (inView(skills)) {
-      skills.classList.add('swing');
-  }
-}
+	function animate() {
+		if (inView(myselfDesc)) {
+			myselfDesc.classList.add('bounce');
+		}
+		if (inView(skills)) {
+			skills.classList.add('swing');
+		}
+	}
 }
 animations();
 // END ANIMACJE

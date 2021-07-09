@@ -20,13 +20,11 @@ jobs:
         run: |
           rm -R scss
       - name: Deploy
-        uses: easingthemes/ssh-deploy@main
-        env:
-            SSH_PRIVATE_KEY: ${{ secrets.ATTHOST_SSH_PASSWORD }}
-            ARGS: "-rltgoDzvO --delete"
-            SOURCE: "./"
-            REMOTE_HOST: ${{ secrets.ATTHOST_SHH_HOST }}
-            REMOTE_PORT: 6022
-            REMOTE_USER: ${{ secrets.ATTHOST_SSH_USER }}
-            TARGET: ./websites/Portfolio-AdrianKorzan
-            EXCLUDE: "/dist/, /node_modules/"
+        uses: kostya-ten/ssh-server-deploy@v4
+        with:
+          host: ${{ secrets.ATTHOST_SHH_HOST }}
+          port: 6022
+          username: ${{ secrets.ATTHOST_SSH_USER }}
+          password: ${{ secrets.ATTHOST_SSH_PASSWORD }}
+          scp_source: ./
+          scp_target: ./websites/Portfolio-AdrianKorzan

@@ -30,6 +30,3 @@ jobs:
             REMOTE_USER: ${{ secrets.ATTHOST_SSH_USER }}
             TARGET: ./websites/Portfolio-AdrianKorzan
             EXCLUDE: "/dist/, /node_modules/"
-        with:
-          branch: gh-pages
-          folder: ./
